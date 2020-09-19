@@ -1,5 +1,6 @@
 package pageobject;
 
+import io.appium.java_client.android.Activity;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.android.nativekey.AndroidKey;
@@ -16,6 +17,7 @@ public class ProfilePage {
 
     public ProfilePage(AndroidDriver driver) {
         this.driver = driver;
+        //this.driver.launchApp();
         PageFactory.initElements(new AppiumFieldDecorator(driver, Duration.ofSeconds(15)), this);
     }
 

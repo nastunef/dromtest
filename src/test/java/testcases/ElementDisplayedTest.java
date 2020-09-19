@@ -4,6 +4,7 @@
 
 package testcases;
 
+import io.appium.java_client.android.nativekey.AndroidKey;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -108,31 +109,51 @@ public class ElementDisplayedTest {
     //отображаются ли результаты после..
     //--------------------------------------------------
 
-    //сложения
+    //после сложения
     @Test
     public void resultTextViewDisplayedAfterAdd(){
-        mainPage.add("4","3");
+        mainPage.inputFiledLeftClick();
+        mainPage.pressKey(AndroidKey.NUMPAD_2);
+        mainPage.inputFiledRightClick();
+        mainPage.pressKey(AndroidKey.NUMPAD_6);
+        mainPage.additionButtonClick();
+
         Assert.assertFalse("".equals(mainPage.getRealResultText()));
     }
 
-    //деления
+    //после деления
     @Test
     public void resultTextViewDisplayedAfterDiv(){
-        mainPage.div("4","3");
+        mainPage.inputFiledLeftClick();
+        mainPage.pressKey(AndroidKey.NUMPAD_2);
+        mainPage.inputFiledRightClick();
+        mainPage.pressKey(AndroidKey.NUMPAD_6);
+        mainPage.divisionButtonClick();
+
         Assert.assertFalse("".equals(mainPage.getRealResultText()));
     }
 
     //умножения
     @Test
     public void resultTextViewDisplayedAfterMultiplication(){
-        mainPage.multiplication("4","3");
+        mainPage.inputFiledLeftClick();
+        mainPage.pressKey(AndroidKey.NUMPAD_2);
+        mainPage.inputFiledRightClick();
+        mainPage.pressKey(AndroidKey.NUMPAD_6);
+        mainPage.multiplicationButtonClick();
+
         Assert.assertFalse("".equals(mainPage.getRealResultText()));
     }
 
     //разности
     @Test
     public void resultTextViewDisplayedAfterSubtract(){
-        mainPage.subtract("4","3");
+        mainPage.inputFiledLeftClick();
+        mainPage.pressKey(AndroidKey.NUMPAD_2);
+        mainPage.inputFiledRightClick();
+        mainPage.pressKey(AndroidKey.NUMPAD_6);
+        mainPage.subtractButtonClick();
+
         Assert.assertFalse("".equals(mainPage.getRealResultText()));
     }
 
@@ -140,7 +161,6 @@ public class ElementDisplayedTest {
     @Test
     public void resultTextViewDisplayedAfterReset(){
         mainPage.reset();
-        System.out.println(mainPage.getRealResultText());
         Assert.assertTrue("".equals(mainPage.getRealResultText()));
     }
 

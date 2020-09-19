@@ -16,12 +16,12 @@ public class MyAndroidDriver {
 
         caps = new DesiredCapabilities();
         caps.setCapability("deviceName", "Google Nexus 6_1");
-        caps.setCapability("udid", "192.168.106.101:5555"); //DeviceId from "adb devices" command
+        //caps.setCapability("udid", "192.168.106.101:5555"); //DeviceId from "adb devices" command
         caps.setCapability("platformName", "Android");
         caps.setCapability("platformVersion", "5.1");
         caps.setCapability("skipUnlock", "true");
         caps.setCapability("appPackageName", "com.vbanthia.androidsampleapp");
-        caps.setCapability("appActivity", "AndroidSimpleApp");
+        caps.setCapability("appActivity", "com.vbanthia.androidsampleapp.MainActivity");
         caps.setCapability("noReset", "false");
     }
 
