@@ -177,4 +177,18 @@ public class ProfilePage {
     public void pressKey(KeyEvent key) {
         driver.pressKey(key);
     }
+
+    public boolean resetButtonEnabled() { return  resetButton.isEnabled(); }
+
+    public boolean divisionButtonEnabled() { return divisionButton.isEnabled(); }
+
+    public boolean multiplicationButtonEnabled() { return multiplicationButton.isEnabled(); }
+
+    public boolean additionButtonEnabled() { return additionButton.isEnabled(); }
+
+    public boolean subtractButtonEnabled() { return subtractButton.isEnabled(); }
+
+    public boolean inputFiledRightEnabled() { return inputFieldRight.isEnabled(); }
+
+    public boolean inputFiledLeftEnabled() { return  inputFieldLeft.isEnabled(); }
 }

@@ -182,4 +182,25 @@ public class MainPage {
     //
     public void pressKey(AndroidKey key){ profilePage.pressKey(new KeyEvent(key));}
 
+    public boolean resetButtonEnabled() { return profilePage.resetButtonEnabled(); }
+
+    public boolean divisionButtonEnabled() { return profilePage.divisionButtonEnabled(); }
+
+    public boolean addButtonEnabled() { return profilePage.additionButtonEnabled(); }
+
+    public boolean subtractButtonEnabled() { return profilePage.subtractButtonEnabled(); }
+
+    public boolean multiplicationButtonEnabled() { return profilePage.multiplicationButtonEnabled(); }
+
+    public boolean inputFiledLeftEnabled() { return  profilePage.inputFiledLeftEnabled(); }
+
+    public boolean inputFiledRightEnabled() { return profilePage.inputFiledRightEnabled(); }
+
+    //ввод key i раз
+    public void pressINumber(AndroidKey key, int i){
+        for (int j = 0; j < i; j++){
+            pressKey(key);
+        }
+    }
+
 }
