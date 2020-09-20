@@ -1,4 +1,5 @@
 ID: 3
+Priority: Medium
 Title: Кнопка reset не стирает результаты вычисления
 Description: При нажатии на кнопку reset результаты предыдущего вычисления не стираются
 Precondition:

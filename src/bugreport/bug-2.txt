@@ -1,4 +1,5 @@
 ID: 2
+Priority: High
 Title: В правое поле (inputFieldRight) не вводится отрицательное число
 Description: При активном поле (inputFieldRight) для ввода программа никак не реагирует на нажатие минус
 Precondition:
