@@ -69,7 +69,7 @@ public class DisplayingResultAfterActionTestCase {
     @Test
     public void resultTextViewDisplayedAfterReset(){
         //складываем числа и получаем результат
-        mainPage.add();
+        mainPage.additionButtonClick();
         //сбрасываем данные
         mainPage.reset();
         Assert.assertTrue("".equals(mainPage.getRealResultText()));

@@ -1,0 +1,16 @@
+ID: 1
+Title: В левое поле (inputFieldLeft) не вводится отрицательное число
+Description: При активном поле(inputFieldLeft) для ввода программа никак не реагирует на нажатие минус
+Precondition:
+    Платформа Android 5.1.
+    Приложение AndroidSimpleApp version 1.0
+Steps To Reproduce:
+    1. Нажать на левое поле для ввода первого числа (inputFieldLeft)
+    2. Нажать на минус
+
+Expected Result:
+    Минус появился в поле
+Actual Result:
+    Минус НЕ появился в поле
+
+

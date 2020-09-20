@@ -121,12 +121,11 @@ public class DivOperationTestCase {
     @Test
     public void divNullTest (){
         // 10.666 / 0
-        // Сообщить об ошибке
         inputOne = "10.666";
         inputTwo = "0";
-        result = "Ошибка";
+        result = "Infinity";
         //ожидаемый результат
-        String expectedResultText = result;
+        String expectedResultText = mainPage.getExpectedResultText(inputOne, inputTwo, OPERATION, result);
         //деление
         mainPage.div(inputOne, inputTwo);
         //реальный результат

@@ -1,9 +1,7 @@
 package pageobject;
 
-import io.appium.java_client.android.Activity;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
-import io.appium.java_client.android.nativekey.AndroidKey;
 import io.appium.java_client.android.nativekey.KeyEvent;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
@@ -17,7 +15,6 @@ public class ProfilePage {
 
     public ProfilePage(AndroidDriver driver) {
         this.driver = driver;
-        //this.driver.launchApp();
         PageFactory.initElements(new AppiumFieldDecorator(driver, Duration.ofSeconds(15)), this);
     }
 
@@ -47,45 +44,44 @@ public class ProfilePage {
     @AndroidFindBy(id = "com.vbanthia.androidsampleapp:id/resultTextView")
     private AndroidElement resultTextView;
 
-
-    //--------------------------------
+    //--------------------------------------------------------------------------
     //клики по кнопкам
-    //--------------------------------
+    //--------------------------------------------------------------------------
 
     //клик +
     public void add(){
         additionButton.click();
     }
 
-    //клик минус
+    //клик -
     public void subtract(){
         subtractButton.click();
     }
 
-    //клик умножить
+    //клик *
     public void multiplication(){
         multiplicationButton.click();
     }
 
-    //клик разделить
+    //клик /
     public void div(){
         divisionButton.click();
     }
 
-    //клик сброс
+    //клик reset
     public void reset(){
         resetButton.click();
     }
 
-    //клик inputFiledLeft
+    //клик inputFiledLeft (левое) первое поле
     public void inputFiledLeft(){ inputFieldLeft.click(); }
 
-    //клик InputFieldRight
+    //клик InputFieldRight (правое) ворое поле
     public void setInputFieldRight(){ inputFieldRight.click();}
 
-    //---------------------
+    //------------------------------------------------------------
     //задать значение полей
-    //--------------------------------
+    //------------------------------------------------------------
 
     //очистить поля
     public void clearAll(){
@@ -99,7 +95,6 @@ public class ProfilePage {
         inputFieldRight.sendKeys(fieldRight);
     }
 
-
     //задать значение левому полю
     public void setFieldLeft(String fieldLeft) {
         inputFieldLeft.sendKeys(fieldLeft);
@@ -110,9 +105,9 @@ public class ProfilePage {
         inputFieldRight.setValue(fieldRight);
     }
 
-    //------------------------
+    //------------------------------------------------------------------
     //получение значения элементов
-    //--------------------------------
+    //------------------------------------------------------------------
 
     //получить значение правого поля
     public String getInputFieldLeftValue() {
@@ -129,9 +124,9 @@ public class ProfilePage {
         return resultTextView.getText();
     }
 
-    //--------------------------------
+    //-------------------------------------------------------------------
     //отображение элементов приложения
-    //--------------------------------
+    //-------------------------------------------------------------------
 
     //отображается ли левое поле
     public boolean inputFiledLeftDisplayed() {
@@ -173,10 +168,9 @@ public class ProfilePage {
         return resultTextView.isDisplayed();
     }
 
-
-    public void pressKey(KeyEvent key) {
-        driver.pressKey(key);
-    }
+    //-------------------------------------------------------------------
+    //доступность элементов для использования
+    //-------------------------------------------------------------------
 
     public boolean resetButtonEnabled() { return  resetButton.isEnabled(); }
 
@@ -191,4 +185,13 @@ public class ProfilePage {
     public boolean inputFiledRightEnabled() { return inputFieldRight.isEnabled(); }
 
     public boolean inputFiledLeftEnabled() { return  inputFieldLeft.isEnabled(); }
+
+    //-------------------------------------------------------------------
+    //имитация нажатия на Android клавиатуру
+    //-------------------------------------------------------------------
+
+    public void pressKey(KeyEvent key) {
+        driver.pressKey(key);
+    }
+
 }

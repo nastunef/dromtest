@@ -19,9 +19,9 @@ public class MainPage {
         profilePage.quitDriver();
     }
 
-    //--------------------------------
-    //получить значение
-    //--------------------------------
+    //-----------------------------------------------------------------------------
+    //получить значение:
+    //-----------------------------------------------------------------------------
 
     //получить значение левого поля
     public String getInputFieldLeftValue() {
@@ -33,29 +33,19 @@ public class MainPage {
         return profilePage.getInputFieldRightValue();
     }
 
-    //получить текста с реальным результатом
+    //получить текст реального результата
     public String getRealResultText(){
         return profilePage.getResultText();
     }
 
-    //получить ожидаемого результата
+    //получить текст ожидаемого результата
     public String getExpectedResultText( String fieldLeft, String fieldRight, String sign, String result ){
         return String.format(patternResultText, fieldLeft, sign , fieldRight, result);
     }
 
-    //--------------------------------
-    //задать значения
-    //--------------------------------
-
-    //ввод значения в левое поле
-    public void setFieldLeft(String fieldLeft){
-        profilePage.setFieldLeft(fieldLeft);
-    }
-
-    //ввод значения в правое поле
-    public void setFieldRight(String fieldRight) {
-        profilePage.setFieldRight(fieldRight);
-    }
+    //-----------------------------------------------------------------------------
+    //сброс значений полей
+    //-----------------------------------------------------------------------------
 
     //сброс результатов
     public void reset(){
@@ -67,18 +57,13 @@ public class MainPage {
         profilePage.clearAll();
     }
 
-
-    //--------------------------------
-    //выполение вычислений
-    //--------------------------------
+    //-----------------------------------------------------------------------------
+    //выполение операций + - / *
+    //-----------------------------------------------------------------------------
 
     //сложение
     public void add(String fieldLeft, String fieldRight){
         profilePage.enterFields(fieldLeft, fieldRight);
-        profilePage.add();
-    }
-
-    public void add(){
         profilePage.add();
     }
 
@@ -100,9 +85,9 @@ public class MainPage {
         profilePage.div();
     }
 
-    //--------------------------------
-    //отображаются ли поля
-    //--------------------------------
+    //--------------------------------------------------------------------
+    //отображаются ли поля (true/false)
+    //--------------------------------------------------------------------
 
     //отображается ли левое поле
     public boolean inputFiledLeftDisplayed() {
@@ -144,9 +129,9 @@ public class MainPage {
         return profilePage.resultTextViewDisplayed();
     }
 
-    //--------------------------------
-    //клики по кнопкам
-    //--------------------------------
+    //----------------------------------------------------------------------------
+    //клики по элементам приложения
+    //----------------------------------------------------------------------------
 
     //клик по +
     public void additionButtonClick() {
@@ -179,22 +164,37 @@ public class MainPage {
     //клик по правому полю
     public void inputFiledRightClick(){ profilePage.setInputFieldRight();}
 
-    //
-    public void pressKey(AndroidKey key){ profilePage.pressKey(new KeyEvent(key));}
+    //--------------------------------------------------------------------------
+    //возвращает значение true если елемент включен(доступен) для пользователя
+    //--------------------------------------------------------------------------
 
+    //кнопка reset
     public boolean resetButtonEnabled() { return profilePage.resetButtonEnabled(); }
 
+    //кнопка /
     public boolean divisionButtonEnabled() { return profilePage.divisionButtonEnabled(); }
 
+    //кнопка +
     public boolean addButtonEnabled() { return profilePage.additionButtonEnabled(); }
 
+    //кнопка -
     public boolean subtractButtonEnabled() { return profilePage.subtractButtonEnabled(); }
 
+    //кнопка *
     public boolean multiplicationButtonEnabled() { return profilePage.multiplicationButtonEnabled(); }
 
+    //левое(первое) поле для ввода
     public boolean inputFiledLeftEnabled() { return  profilePage.inputFiledLeftEnabled(); }
 
+    //второе(правое) поле для ввода
     public boolean inputFiledRightEnabled() { return profilePage.inputFiledRightEnabled(); }
+
+    //-----------------------------------------------------------------------------
+    //функции для имитации ввода с Android клавиатуры
+    //-----------------------------------------------------------------------------
+
+    //работа с Android клавиатурой
+    public void pressKey(AndroidKey key){ profilePage.pressKey(new KeyEvent(key));}
 
     //ввод key i раз
     public void pressINumber(AndroidKey key, int i){
