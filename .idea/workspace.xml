@@ -3,15 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="029aac31-227d-40b1-9c70-e341d34154ca" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bugreport/bug-1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/bugreport/bug-1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bugreport/bug-2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/bugreport/bug-2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bugreport/bug-3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/bugreport/bug-3.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bugreport/bug-4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/bugreport/bug-4.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bugreport/bug-5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/bugreport/bug-5.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bugreport/bug-6.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/bugreport/bug-6.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bugreport/bug-7.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/bugreport/bug-7.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bugreport/bug-8.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/bugreport/bug-8.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bugreport/bug-9.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utils/MyAndroidDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/MyAndroidDriver.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,7 +51,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
@@ -187,7 +180,7 @@
       <workItem from="1600304897152" duration="16646000" />
       <workItem from="1600471468834" duration="14187000" />
       <workItem from="1600562760759" duration="19783000" />
-      <workItem from="1600636495569" duration="9220000" />
+      <workItem from="1600636495569" duration="9930000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1600504860191</created>
@@ -210,7 +203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600645555599</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="init">
+      <created>1600646093694</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1600646093694</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

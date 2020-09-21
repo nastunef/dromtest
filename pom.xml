@@ -17,7 +17,7 @@
                     <target>8</target>
                 </configuration>
             </plugin>
-        </plugins>nast
+        </plugins>
     </build>
 
     <dependencies>
