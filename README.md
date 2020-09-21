@@ -6,7 +6,7 @@
   4. IntelliJ IDEA 2019.2.3 (Ultimate Edition)
   5. Java SDK 1.8
  
- Информация об эмуляторе(параметры) находится в классе MyAndroidDriver
+ Информация об эмуляторе(параметры) находится в классе MyAndroidDriver (папка test/java/utils)
  
  Запускать тесткейсы желательно следующим образом:
   1. DisplayingElementsTestCase
